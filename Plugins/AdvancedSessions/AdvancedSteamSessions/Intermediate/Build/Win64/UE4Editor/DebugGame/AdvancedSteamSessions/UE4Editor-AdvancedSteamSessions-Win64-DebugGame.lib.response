@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-AdvancedSteamSessions-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\MyProject\Intermediate\Build\Win64\MyProjectEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h.obj"
+"D:\MyProject\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UE4Editor\DebugGame\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp.obj"
+"D:\MyProject\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UE4Editor\DebugGame\AdvancedSteamSessions\Module.AdvancedSteamSessions.gen.cpp.obj"
+"D:\MyProject\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UE4Editor\DebugGame\AdvancedSteamSessions\Default.rc2.res"
+/OUT:"D:\MyProject\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UE4Editor\DebugGame\AdvancedSteamSessions\UE4Editor-AdvancedSteamSessions-Win64-DebugGame.lib"
