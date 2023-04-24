@@ -1,0 +1,13 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\gold\\plugins\\advancedsessions\\advancedsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsessions\\uht\\advancedsessions.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\gold\\intermediate\\build\\win64\\myproject\\shipping\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\gold\\plugins\\advancedsessions\\advancedsessions\\intermediate\\build\\win64\\unrealgame\\shipping\\advancedsessions\\definitions.advancedsessions.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

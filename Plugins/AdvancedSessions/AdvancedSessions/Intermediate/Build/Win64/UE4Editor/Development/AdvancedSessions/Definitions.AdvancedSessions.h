@@ -49,8 +49,8 @@
 #define NDEBUG 1
 #define UE_BUILD_DEVELOPMENT 1
 #define UE_IS_ENGINE_MODULE 0
-#define UE_PROJECT_NAME MyProject
-#define UE_TARGET_NAME MyProjectEditor
+#define UE_PROJECT_NAME VRExpPluginExample
+#define UE_TARGET_NAME VRExpPluginExampleEditor
 #define WITH_ADVANCED_SESSIONS 1
 #define UE_MODULE_NAME "AdvancedSessions"
 #define UE_PLUGIN_NAME "AdvancedSessions"

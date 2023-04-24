@@ -1,0 +1,15 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\gold\\plugins\\advancedsessions\\advancedsteamsessions\\intermediate\\build\\win64\\unrealgame\\shipping\\advancedsteamsessions\\module.advancedsteamsessions.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\gold\\intermediate\\build\\win64\\myproject\\shipping\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\gold\\plugins\\advancedsessions\\advancedsteamsessions\\intermediate\\build\\win64\\unrealgame\\shipping\\advancedsteamsessions\\definitions.advancedsteamsessions.h",
+            "d:\\gold\\plugins\\advancedsessions\\advancedsteamsessions\\source\\advancedsteamsessions\\private\\advancedsteamsessions.cpp",
+            "d:\\gold\\plugins\\advancedsessions\\advancedsteamsessions\\source\\advancedsteamsessions\\classes\\advancedsteamsessions.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
