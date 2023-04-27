@@ -4,7 +4,32 @@
 #include "UI/UiSubsystem.h"
 #include "Blueprint/UserWidget.h"
 #include "Kismet/GameplayStatics.h"
+#include "Engine/World.h"
 #include "GameFramework/PlayerController.h"
+
+
+void UUiSubsystem::Initialize(FSubsystemCollectionBase& Collection)
+{
+	FWorldDelegates::LevelRemovedFromWorld.AddUObject(this, &ThisClass::OnLevelChanged);
+}
+
+void UUiSubsystem::Deinitialize()
+{
+	FWorldDelegates::LevelRemovedFromWorld.RemoveAll(this);
+}
+
+void UUiSubsystem::OnLevelChanged(ULevel* Level, UWorld* World)
+{
+	CloseAllWidgets();
+}
+
+void UUiSubsystem::CloseAllWidgets()
+{
+	while (!Widgets.IsEmpty())
+	{
+		CloseWidget();
+	}
+}
 
 void UUiSubsystem::CloseWidget()
 {
@@ -24,6 +49,13 @@ void UUiSubsystem::CloseWidget()
 			PC->SetInputMode(Mode);
 		}
 	}
+	else
+	{
+		if (UUserWidget* ActiveWidget = *Widgets.Peek())
+		{
+			ActiveWidget->SetVisibility(ESlateVisibility::Visible);
+		}
+	}
 }
 
 UUserWidget* UUiSubsystem::AddWidget(UClass* WidgetClass)
@@ -31,18 +63,22 @@ UUserWidget* UUiSubsystem::AddWidget(UClass* WidgetClass)
 	auto* NewWidget = CreateWidget<UUserWidget>(GetWorld(), WidgetClass);
 	if (IsValid(NewWidget))
 	{
-		if (Widgets.IsEmpty())
+		if (!Widgets.IsEmpty())
 		{
-			if (auto* PC = UGameplayStatics::GetPlayerController(this, 0))
+			if (UUserWidget* ActiveWidget = *Widgets.Peek())
 			{
-				Widgets.Enqueue(NewWidget);
-				PC->SetShowMouseCursor(true);
-				FInputModeGameAndUI Mode;
-				Mode.SetLockMouseToViewportBehavior(EMouseLockMode::LockInFullscreen);
-				Mode.SetHideCursorDuringCapture(false);
-				PC->SetInputMode(Mode);
-				NewWidget->AddToViewport();
+				ActiveWidget->SetVisibility(ESlateVisibility::Collapsed);
 			}
+		}
+		if (auto* PC = UGameplayStatics::GetPlayerController(this, 0))
+		{
+			Widgets.Enqueue(NewWidget);
+			PC->SetShowMouseCursor(true);
+			FInputModeGameAndUI Mode;
+			Mode.SetLockMouseToViewportBehavior(EMouseLockMode::LockInFullscreen);
+			Mode.SetHideCursorDuringCapture(false);
+			PC->SetInputMode(Mode);
+			NewWidget->AddToViewport();
 		}
 	}
 	return NewWidget;

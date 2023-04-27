@@ -20,10 +20,21 @@ public:
 	UUserWidget* AddWidget(UClass* WidgetClass);
 
 	UFUNCTION(BlueprintCallable)
+	void CloseAllWidgets();
+
+	UFUNCTION(BlueprintCallable)
 	void CloseWidget();
 
 	UFUNCTION(BlueprintCallable)
 	UUserWidget* GetActiveWidget();
+
+protected:
+
+	virtual void Initialize(FSubsystemCollectionBase& Collection);
+	virtual void Deinitialize();
+
+	UFUNCTION()
+	void OnLevelChanged(ULevel* Level, UWorld* World);
 
 private:
 
