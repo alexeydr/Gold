@@ -1,6 +1,6 @@
-D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealGame\Shipping\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp
+E:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealGame\Shipping\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp
 /I .
-/I D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private
+/I E:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private
 /I ..\Plugins\Online\OnlineSubsystem\Intermediate\Build\Win64\UnrealGame\Inc\OnlineSubsystem\UHT
 /I ..\Plugins\Online\OnlineSubsystem
 /I ..\Plugins\Online\OnlineSubsystem\Source
@@ -115,13 +115,13 @@ D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\
 /I Runtime\TypedElementFramework\Public
 /I ..\Intermediate\Build\Win64\UnrealGame\Inc\TypedElementRuntime\UHT
 /I Runtime\TypedElementRuntime\Public
-/I D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealGame\Inc\AdvancedSteamSessions\UHT
-/I D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Source
+/I E:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealGame\Inc\AdvancedSteamSessions\UHT
+/I E:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Source
 /I ..\Plugins\Online\OnlineSubsystemSteam\Source\Private
-/I D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes
-/I D:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealGame\Inc\AdvancedSessions\UHT
-/I D:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Source
-/I D:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Source\AdvancedSessions\Classes
+/I E:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes
+/I E:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealGame\Inc\AdvancedSessions\UHT
+/I E:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Source
+/I E:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Source\AdvancedSessions\Classes
 /I ThirdParty\Steamworks\Steamv153\sdk\public
 /I ..\Plugins\Online\OnlineSubsystemSteam\Intermediate\Build\Win64\UnrealGame\Inc\OnlineSubsystemSteam\UHT
 /I ..\Plugins\Online\OnlineSubsystemSteam
@@ -130,17 +130,17 @@ D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
-/I E:\VS\VC\Tools\MSVC\14.29.30133\INCLUDE
+/I E:\vs22\VC\Tools\MSVC\14.29.30133\INCLUDE
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"D:\Gold\Intermediate\Build\Win64\MyProject\Shipping\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
-/FI"D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealGame\Shipping\AdvancedSteamSessions\Definitions.AdvancedSteamSessions.h"
-/Yu"D:\Gold\Intermediate\Build\Win64\MyProject\Shipping\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
-/Fp"D:\Gold\Intermediate\Build\Win64\MyProject\Shipping\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.pch"
-/Fo"D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealGame\Shipping\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp.obj"
-/sourceDependencies D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealGame\Shipping\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp.dep.json
+/FI"E:\Gold\Intermediate\Build\Win64\MyProject\Shipping\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
+/FI"E:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealGame\Shipping\AdvancedSteamSessions\Definitions.AdvancedSteamSessions.h"
+/Yu"E:\Gold\Intermediate\Build\Win64\MyProject\Shipping\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
+/Fp"E:\Gold\Intermediate\Build\Win64\MyProject\Shipping\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.pch"
+/Fo"E:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealGame\Shipping\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp.obj"
+/sourceDependencies E:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealGame\Shipping\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp.dep.json
 /Zc:inline
 /nologo
 /Oi
