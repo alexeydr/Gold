@@ -4,6 +4,7 @@
 #include "PlayFab/PlayFabGameInstanceSubsystem.h"
 #include "OnlineSubsystemSteam.h"
 #include "OnlineSubsystemUtils.h"
+#include "PlayFabJsonObject.h"
 
 FString UPlayFabGameInstanceSubsystem::GetSteamAuthToken()
 {
@@ -18,3 +19,7 @@ FString UPlayFabGameInstanceSubsystem::GetSteamAuthToken()
 	return {};
 }
 
+
+void UPlayFabGameInstanceSubsystem::GetVCBalance(UPlayFabJsonObject* JSON)
+{
+}

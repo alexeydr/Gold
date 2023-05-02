@@ -4,11 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
+
 #include "PlayFabGameInstanceSubsystem.generated.h"
 
-/**
- * 
- */
+class UPlayFabJsonObject;
+
 UCLASS()
 class MYPROJECT_API UPlayFabGameInstanceSubsystem : public UGameInstanceSubsystem
 {
@@ -18,5 +18,8 @@ public:
 
 	UFUNCTION(BlueprintPure)
 	FString GetSteamAuthToken();
+
+	UFUNCTION(BlueprintCallable)
+	void GetVCBalance(UPlayFabJsonObject* JSON);
 	
 };

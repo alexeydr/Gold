@@ -6,18 +6,28 @@
 USteamInventory::USteamInventory()
 {
 	OnSteamInventoryFullUpdateCallback.Register(this, &USteamInventory::OnSteamInventoryFullUpdate);
+	OnSteamInventoryResultReadyCallback.Register(this, &USteamInventory::OnSteamInventoryResultReady);
 }
 
 USteamInventory::~USteamInventory()
 {
-
 	OnSteamInventoryFullUpdateCallback.Unregister();
+	OnSteamInventoryResultReadyCallback.Unregister();
 }
 
-
-void USteamInventory::OnSteamInventoryFullUpdate(SteamInventoryFullUpdate_t* pParam)
+void USteamInventory::ConsumeCoins(FSteamInventoryResult& ResultHandle, int32 itemID, int32 unQuantity)
 {
-	m_OnSteamInventoryFullUpdate.Broadcast(pParam->m_handle);
+	SteamInventory()->ConsumeItem(&ResultHandle.Value, FUint64(itemID), unQuantity);
+}
+
+void USteamInventory::AddCoins(FSteamInventoryResult& ResultHandle, int32 itemID, int32 unQuantity)
+{
+	SteamItemDef_t newItems[1];
+	uint32 quantities[1];
+	newItems[0] = itemID;
+	quantities[0] = unQuantity;
+
+	SteamInventory()->GenerateItems(&ResultHandle.Value, newItems, quantities, 1);
 }
 
 bool USteamInventory::GetResultItems(FSteamInventoryResult ResultHandle, TArray<FSteamItemDetails>& ItemsArray) const
@@ -39,4 +49,14 @@ bool USteamInventory::GetResultItems(FSteamInventoryResult ResultHandle, TArray<
 	}
 
 	return false;
+}
+
+void USteamInventory::OnSteamInventoryFullUpdate(SteamInventoryFullUpdate_t* pParam)
+{
+	m_OnSteamInventoryFullUpdate.Broadcast(pParam->m_handle);
+}
+
+void USteamInventory::OnSteamInventoryResultReady(SteamInventoryResultReady_t* pParam)
+{
+	m_OnSteamInventoryResultReady.Broadcast(pParam->m_handle, (ESteamResult)pParam->m_result);
 }

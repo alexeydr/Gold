@@ -12,7 +12,22 @@
         "item_slot": "decoration",
         "item_quality": 0,
         "tradable": false,
-        "marketable": false
+        "marketable": false,
+        "auto_stack": true,
+	"game_only": true
+    },{
+        "itemdefid": 101,
+        "type":  "item",
+        "name": "SCoin",
+        "description": "Spended Coins",
+        "name_color":  "7D6D00",
+        "background_color":  "3C352E",
+        "item_slot": "decoration",
+        "item_quality": 0,
+        "tradable": false,
+        "marketable": false,
+        "auto_stack": true,
+	"game_only": true
     }
     ]
 }

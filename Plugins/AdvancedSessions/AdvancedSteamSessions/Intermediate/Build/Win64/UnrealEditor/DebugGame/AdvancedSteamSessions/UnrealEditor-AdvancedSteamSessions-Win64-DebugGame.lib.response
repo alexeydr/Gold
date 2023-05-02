@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-AdvancedSteamSessions-Win64-DebugGame.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\Gold\Intermediate\Build\Win64\MyProjectEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_0.h.obj"
-"D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp.obj"
-"D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSteamSessions\Default.rc2.res"
-/OUT:"D:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSteamSessions\UnrealEditor-AdvancedSteamSessions-Win64-DebugGame.lib"
+"E:\Gold\Intermediate\Build\Win64\MyProjectEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"E:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp.obj"
+"E:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSteamSessions\Default.rc2.res"
+/OUT:"E:\Gold\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSteamSessions\UnrealEditor-AdvancedSteamSessions-Win64-DebugGame.lib"
