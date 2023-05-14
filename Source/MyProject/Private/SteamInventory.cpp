@@ -23,9 +23,11 @@ void USteamInventory::ConsumeCoins(FSteamInventoryResult& ResultHandle, int32 it
 void USteamInventory::AddCoins(FSteamInventoryResult& ResultHandle, int32 itemID, int32 unQuantity)
 {
 	SteamItemDef_t newItems[1];
+	uint32 quantities[1];
 	newItems[0] = itemID;
+	quantities[0] = unQuantity;
 
-	SteamInventory()->AddPromoItems(&ResultHandle.Value, newItems, unQuantity);
+	SteamInventory()->GenerateItems(&ResultHandle.Value, newItems, quantities, 1);
 }
 
 bool USteamInventory::GetResultItems(FSteamInventoryResult ResultHandle, TArray<FSteamItemDetails>& ItemsArray) const
