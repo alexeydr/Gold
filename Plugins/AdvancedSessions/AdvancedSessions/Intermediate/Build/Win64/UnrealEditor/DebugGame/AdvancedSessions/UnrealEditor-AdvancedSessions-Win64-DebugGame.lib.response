@@ -6,9 +6,9 @@
 /NAME:"UnrealEditor-AdvancedSessions-Win64-DebugGame.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"E:\Gold\Intermediate\Build\Win64\MyProjectEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_0.h.obj"
-"E:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.1_of_3.cpp.obj"
-"E:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.2_of_3.cpp.obj"
-"E:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.3_of_3.cpp.obj"
-"E:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSessions\Default.rc2.res"
-/OUT:"E:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSessions\UnrealEditor-AdvancedSessions-Win64-DebugGame.lib"
+"D:\Gold\Intermediate\Build\Win64\MyProjectEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"D:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.1_of_3.cpp.obj"
+"D:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.2_of_3.cpp.obj"
+"D:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSessions\Module.AdvancedSessions.3_of_3.cpp.obj"
+"D:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSessions\Default.rc2.res"
+/OUT:"D:\Gold\Plugins\AdvancedSessions\AdvancedSessions\Intermediate\Build\Win64\UnrealEditor\DebugGame\AdvancedSessions\UnrealEditor-AdvancedSessions-Win64-DebugGame.lib"
